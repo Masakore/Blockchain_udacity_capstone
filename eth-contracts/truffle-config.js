@@ -52,7 +52,7 @@ module.exports = {
       provider: function() {
         return new HDWalletProvider(mnemonic, "http://127.0.0.1:8545/", 0, 50);
       }
-     }
+     },
 
     // Another network with more advanced options...
     // advanced: {
@@ -63,6 +63,15 @@ module.exports = {
       // from: <address>,        // Account to send txs from (default: accounts[0])
       // websockets: true        // Enable EventEmitter interface for web3 (default: false)
     // },
+    rinkeby: {
+      provider: function() {
+        return new HDWalletProvider(mnemonic, 'https://rinkeby.infura.io/v3/f6b073ec3c0d422cbb6b065539a3b75c')
+
+      },
+      network_id: 4,
+      gas: 4500000,
+      gasPrice: 10000000000
+    }
 
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.

@@ -14,10 +14,11 @@
     "lite-server": "2.4.0"
   },
   "dependencies": {
+    "bignumber.js": "8.0.2",
     "openzeppelin-solidity": "^2.2.0",
     "solc": "^0.5.2",
     "solc-js": "^0.5.2",
     "truffle-hdwallet-provider": "1.0.2",
-    "bignumber.js": "8.0.2"
+    "web3": "^1.0.0-beta.55"
   }
 }
