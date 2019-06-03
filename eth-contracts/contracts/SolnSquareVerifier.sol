@@ -18,12 +18,12 @@ contract SolnSquareVerifier is MyERC721Token {
   event SolutionAdded(address solution);
 
   constructor (
-    address _verifierContract,
-    string memory name,
-    string memory symbol,
-    string memory baseTokenURI
+    address _verifierContract
+//    string memory name,
+//    string memory symbol,
+//    string memory baseTokenURI
   )
-    MyERC721Token(name, symbol, baseTokenURI)
+    MyERC721Token()
     public
   {
     verifier = Verifier(_verifierContract);
